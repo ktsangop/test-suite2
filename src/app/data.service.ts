@@ -10,7 +10,7 @@ export class DataService {
   public fetchData(): Observable<any> {
     return this.httpClient
       .get<any>(
-        `https://raw.githubusercontent.com/ktsangop/test-suite-1/master/db.json`
+        `https://raw.githubusercontent.com/ktsangop/test-suite-data/main/data.json`
       )
       .pipe(delay(3000));
   }
@@ -20,7 +20,7 @@ export class DataService {
     return of(1).pipe(
       delay(3000),
       map(() => {
-        JSON.stringify(authPassed ? { login: true } : { login: false });
+        return authPassed ? { login: true } : { login: false };
       })
     );
   }

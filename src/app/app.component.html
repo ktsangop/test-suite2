@@ -3,3 +3,22 @@
 <button mat-raised-button color="primary">Contact</button>
 
 <router-outlet></router-outlet>
+
+<div class="mat-typography">
+    <h3 class="mat-h3">TODO :</h3>
+    <ul>
+        <li>Implement design for login page as displayed. You can use Angular Material but it's not required (already installed in package.json)</li>
+        <li>Use `fakeLogin` from DataService to emulate authentication (use hard coded credentials on DataService). Display a message for successful or failed login (Choose the interface yourself)</li>
+        <li>No need to add any functionality to "REMEMBER ME" or Sign Up</li>
+        <li>Loading indicators on async actions like login would be nice to have</li>
+        <li>Keep state for user logged in status in DataService (your decision how to do this). Logged in state does not have to persist after page reload (in memory only)</li>
+        <li>Add routing to the navigation buttons on top that should redirect user to `/login` or `/loyalty` route/page</li>
+        <li>Guard the /loyalty route using the state of user authentication (do not allow access to /loyalty if user is not logged in) => Try to use Angular Guards</li>
+        <li>Implement design for loyalty page as displayed</li>
+        <li>Use DataService.fetchData() API to get the required Data (basically fetches data.json from github)</li>
+        <li>Try to Resolve data before redirecting to /loyalty => (Try to use Angular Resolvers)</li>
+        <li>Loading indicator would be nice also here while loading data (do not remove delays they have been added on purpose)</li>
+        <li>Each loyalty step is a circular button, and displays the info on the top card when clicked </li>
+        <li>Loyalty step buttons have a popover that displays the </li>
+    </ul>
+</div>
