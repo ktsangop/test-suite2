@@ -1,0 +1,20 @@
+{
+  "loyaltyPlanName": "Napoli Rewards",
+  "awards": [
+    {
+      "name": "$30 fixed price off",
+      "amount": 10,
+      "daysExpires": 10
+    },
+    {
+      "name": "salad 30% precent off",
+      "amount": 15,
+      "daysExpires": 10
+    },
+    {
+      "name": "30% Off Online Order",
+      "amount": 100,
+      "daysExpires": 10
+    }
+  ]
+}
