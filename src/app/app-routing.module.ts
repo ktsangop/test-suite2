@@ -1,21 +1,25 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { LoyaltyComponent } from "./loyalty/loyalty.component";
-import { LoginComponent } from "./login/login.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LoyaltyComponent } from './loyalty/loyalty.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
-    path: "",
-    pathMatch: "full",
-    redirectTo: "intro"
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'login'
   },
   {
-    path: "intro",
+    path: 'login',
     component: LoginComponent
   },
   {
-    path: "contact",
+    path: 'loyalty',
     component: LoyaltyComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'login'
   }
 ];
 
